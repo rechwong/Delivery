@@ -1,0 +1,56 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include <string.h>
+#define N 100   //定义数组大小
+
+
+void main()
+{
+	double cscore[N];
+	char name[N][20];
+	char number[N][20];
+
+	char sname[20],snumber[20];//查找变量
+
+	double sc;
+	int count=0,t;  //统计学生人数
+	double max,min,sum;
+	int n1,n2,n3,n4,n5;
+
+	int n,ch,ch1,i,j;            //n：学生人数，ch：一级菜单选择，ch1：二级菜单选择，i：循环控制变量
+	int flag;
+
+	while(1)
+	{       printf("--------------------学生成绩信息管理-----------------\n");
+		printf(" 1.录入   2.显示   3.查找   4.排序   5.统计   0.退出 \n");
+		printf("-----------------------------------------------------\n");
+		printf("请输入选择项：");
+		scanf("%d",&ch);
+		switch(ch)
+		{
+		case 1: 
+                        //完成录入功能，输入多个学生的信息
+			break;
+		case 2: 
+                        //完成显示功能，输出多个学生的信息
+			break;
+		case 3: 
+                        //完成查找功能，输入要查找的学生学号或姓名，给出查找结果
+			break;
+		case 4: 
+                        //完成排序功能，冒泡排序或选择排序
+			break;
+		case 5: 
+                        //完成统计功能，求出最高分、最低......
+			break;
+		case 0:
+			printf("谢谢您使用本系统，再见！！\n");
+			system("pause");
+			return;
+		default:
+			printf("输入数据不合法，请重试！\n");
+		}
+		system("pause");
+		system("cls");
+	}
+}
